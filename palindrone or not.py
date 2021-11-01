@@ -1,5 +1,11 @@
+def palin(n,i):
+    if(i==len(n)//2):
+        return True
+    if(n[i]!=n[len(n)-i-1]):
+        return False
+    return palin(n,i+1)
 n=input()
-if n==n[::-1]:
-    print(n," is a palindrone")
+if(palin(n,0)):
+    print("palindrone")
 else:
-    print(n," is not a palindrone")
+    print("not a palindrone")

@@ -3,7 +3,7 @@ a=int(input())
 b=int(input())
 while a!=0:
     if(a>=b):
-        a=a-b
+        a=a%b
     else:
         a=a+b
         b=a-b
