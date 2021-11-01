@@ -1,0 +1,12 @@
+f=int(input())
+l1=["inches","yards","miles","millimeters","centimeters","meters","km"]
+l2=["f*12","f*0.333","f*0.000189394","f*304.8","f*30.48","f*0.3048","f*0.0003048"]
+print("1->inches")
+print("2->yards")
+print("3->miles")
+print("4->millimeters")
+print("5->centimeters")
+print("6->meters")
+print("7->km")
+choice=int(input())
+print(l1[choice-1],"=",eval(l2[choice-1]))
